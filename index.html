@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <title></title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            #header{
+                background-image: linear-gradient(360deg, rgba(79, 7, 7, .75), rgba(255, 255, 255, 0)), url(header_img.png);
+                background-size: cover;
+                height: 50vh;
+            }
+            #top{
+                padding-top:20px;
+                margin-right: 40px;
+            }
+            #account{
+                border: 1px white solid;
+            }
+            #e_logo{
+                font-size: 7vh;
+                color:red;
+                background-color: white;
+                padding-left: 3%;
+                padding-right: 3%;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                border-radius: 50%;
+            }
+            #heading_text{
+                color:white;
+                font: normal normal 600 36px/55px Poppins;
+            }
+            #text{
+                height: 60px;
+                margin-left: 20px;
+            }
+            .card {
+                 flex-direction: row;
+                 width: 90%;
+                 margin-top:30px;
+            }
+            .card img {
+            width: 40%;
+            }
+            #search{
+                margin-top: 20px;
+            }
+            #coupon{
+                height: 400px;
+                width:400px;
+                z-index: 100;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin:auto;
+                position: absolute;
+                box-shadow: 1px 1px 8px black;
+                display: none;
+            }
+            #coupon img{
+                height: 400px;
+                width:400px;
+            }
+            #closebutton{
+                position:absolute;
+                right:0;
+            }
+            @media only screen and (max-width: 992px) {
+            #text {
+                margin-top: 10px;
+                margin-left: 0;
+            }
+            #header{
+                height: 55vh;
+            }
+            #top{
+                display: none;
+            }
+            #e_logo{
+                margin-top:20px;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="coupon">
+            <img src="coupon_sample.jpeg"/>
+            <button onclick="closecoupon();" id="closebutton">&times;</button>
+        </div>
+        <div id="header">
+            <div id="top">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-white" id="account" href="#">Create an Account</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h3 id="e_logo">e!</h3>
+            </div>
+            <div class="d-flex justify-content-center container">
+                <h4 id="heading_text">Find the best restaurants, cafés, and bars</h4>
+            </div>
+            <div class="d-flex justify-content-center">
+            <div class="row container">
+                <input type="text" class="col-lg-5 col-md-12" id="text" placeholder="Please type a Location"/>
+                <input type="text" class="col-lg-6 col-md-12" id="text" placeholder="Search for restaurants"/>
+            </div>
+        </div>
+        </div>
+        <div class="container" id="search">
+            <h3>Quick Searches</h3>
+            <p>Discover Restaurants by Type of Meal</p>
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img1.png" alt="image alt">
+                        <div class="card-body">
+                        <h5 class="card-title">Breakfast</h5>
+                        <p class="card-text">Some Specific Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img2.png" alt="image alt">
+                        <div class="card-body">
+                        <h5 class="card-title">Lunch</h5>
+                        <p class="card-text">Some Specific Details</p>
+                        </div>
+                    </div>
+                </div><div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img3.png" alt="image alt">
+                        <div class="card-body">
+                        <h5 class="card-title">Snacks</h5>
+                        <p class="card-text">Some Specific Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img4.png" alt="image alt">
+                        <div class="card-body">
+                        <h5 class="card-title">Dinner</h5>
+                        <p class="card-text">Some Specific Details</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img5.png" alt="image alt">
+                        <div class="card-body">
+                        <h5 class="card-title">Drinks</h5>
+                        <p class="card-text">Some Specific Details</p>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-4 col-md-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img6.png" alt="image alt">
+                        <div class="card-body">
+                        <h5 class="card-title">NightLife</h5>
+                        <p class="card-text">Some Specific Details</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            
+            setTimeout(loadcoupon, 1000);
+            function loadcoupon(){
+                document.getElementById('coupon').style.display="block";
+            }
+            function closecoupon(){
+                document.getElementById('coupon').style.display="none";
+            }
+        </script>
+    </body>
+</html>
