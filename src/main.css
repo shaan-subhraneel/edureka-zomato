@@ -1,0 +1,74 @@
+#header{
+    background-image: linear-gradient(360deg, rgba(79, 7, 7, .75), rgba(255, 255, 255, 0)), url('https://i.ibb.co/NVQxPB6/food-Wallpaper.png');
+    background-size: cover;
+    height: 50vh;
+}
+#top{
+    padding-top:20px;
+    margin-right: 40px;
+}
+#account{
+    border: 1px white solid;
+}
+#e_logo{
+    font-size: 7vh;
+    color:red;
+    background-color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 50%;
+}
+#heading_text{
+    color:white;
+    font: normal normal 600 36px/55px Poppins;
+}
+#text{
+    height: 60px;
+    margin-left: 20px;
+}
+.card {
+     flex-direction: row;
+     width: 90%;
+     margin-top:30px;
+}
+.card img {
+width: 40%;
+}
+#search{
+    margin-top: 20px;
+}
+#coupon{
+    height: 400px;
+    width:400px;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto;
+    position: absolute;
+    box-shadow: 1px 1px 8px black;
+    display: none;
+}
+#coupon img{
+    height: 400px;
+    width:400px;
+}
+#closebutton{
+    position:absolute;
+    right:0;
+}
+@media only screen and (max-width: 992px) {
+#text {
+    margin-top: 10px;
+    margin-left: 0;
+}
+#header{
+    height: 60vh;
+}
+#e_logo{
+    margin-top:20px;
+}
+}
