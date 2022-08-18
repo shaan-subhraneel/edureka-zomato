@@ -39,11 +39,11 @@ class MenuDisplay extends Component {
                             <div className="col-md-4">
                                 <button className="btn btn-success"
                                 onClick={() => {this.placeOrder(item.menu_id)}}>
-                                    <span className="glyphicon glyphicon-plus"></span>
+                                    <span>ADD</span>
                                 </button> &nbsp;
                                 <button className="btn btn-danger"
                                 onClick={() => {this.removeOrder(item.menu_id)}}>
-                                    <span className="glyphicon glyphicon-minus"></span>
+                                    <span>REMOVE</span>
                                 </button>
                             </div>   
                     </div>
